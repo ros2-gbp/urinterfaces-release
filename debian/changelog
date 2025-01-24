@@ -1,0 +1,13 @@
+ros-humble-urinterfaces (7.0.0-1jammy) jammy; urgency=high
+
+  * Update msg, srv and action files (#4 <https://github.com/UniversalRobots/ur_interfaces/issues/4>)
+  * Update metainfo (#5 <https://github.com/UniversalRobots/ur_interfaces/issues/5>)
+  * Update ci (#3 <https://github.com/UniversalRobots/ur_interfaces/issues/3>)
+  * Add CI and pre-commit #1 <https://github.com/UniversalRobots/ur_interfaces/issues/1> from UniversalRobots/ci
+  * Add dependency on action_msgs
+  * Introducing new Universal Robots urinterfaces repository
+  * Contributors: Ali Ekber Celik, Felix Exner, Michal Milkowski, Viktor Lukacs
+
+ -- Universal Robots A/S <ros@universal-robots.com>  Tue, 07 Jan 2025 23:00:00 -0000
+
+
