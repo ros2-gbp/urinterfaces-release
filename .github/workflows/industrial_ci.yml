@@ -1,0 +1,27 @@
+name: industrial_ci
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '37 1 * * *'
+
+jobs:
+  industrial_ci:
+    name: industrial_ci
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ROS_DISTRO: [humble, jazzy, rolling]
+        ROS_REPO: [main, testing]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: 'ros-industrial/industrial_ci@master'
+        env:
+          ROS_DISTRO: ${{ matrix.ROS_DISTRO }}
+          ROS_REPO: ${{ matrix.ROS_REPO }}
