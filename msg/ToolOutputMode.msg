@@ -1,6 +1,7 @@
 std_msgs/Header header
 uint8 TOOL_OUTPUT=0
 uint8 TOOL_POWER=1
+uint8 TOOL_SAFE=2
 
 uint8 output_mode
 

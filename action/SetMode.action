@@ -13,7 +13,7 @@ bool stop_program
 # faulty motion, etc.) If you want to be safe, set the 'stop_program' flag below and manually play
 # the program after robot state is returned to normal.
 # This flag will only be used when requesting mode RUNNING
-bool play_program
+bool play_program false
 
 ---
 # result

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.14.4)
 
 project(urinterfaces)
 
@@ -27,9 +27,9 @@ set(msg_files
   "msg/ControlCycle.msg"
   "msg/Current.msg"
   "msg/Digital.msg"
+  "msg/DigitalStamped.msg"
   "msg/DigitalIO.msg"
   "msg/DigitalIOStateStamped.msg"
-  "msg/DigitalStamped.msg"
   "msg/DoubleMultiArrayStamped.msg"
   "msg/Float32Stamped.msg"
   "msg/Float64Stamped.msg"
@@ -44,12 +44,17 @@ set(msg_files
   "msg/ToolOutputMode.msg"
   "msg/VoltageCurrentStamped.msg"
   "msg/WorldModelNames.msg"
+  "msg/JsonStringType.msg"
+  "msg/VariableUpdate.msg"
+  "msg/SharedVariablesEditResponse.msg"
 )
 
 set(srv_files
   "srv/SetAnalogOutput.srv"
   "srv/SetDigitalOutput.srv"
   "srv/SetSpeedFraction.srv"
+  "srv/SharedVariablesEditor.srv"
+  "srv/VariablesViewer.srv"
 )
 
 set(action_files

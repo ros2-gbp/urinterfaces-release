@@ -17,10 +17,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ROS_DISTRO: [humble, jazzy, rolling]
+        ROS_DISTRO: [humble, jazzy, kilted, lyrical, rolling]
         ROS_REPO: [main, testing]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: 'ros-industrial/industrial_ci@master'
         env:
           ROS_DISTRO: ${{ matrix.ROS_DISTRO }}
